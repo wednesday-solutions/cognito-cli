@@ -41,7 +41,7 @@ cognito-cli --help
 
 #### signin
 
-    Use the config to get to sign in and get tokens
+    Use the current config to sign in and get tokens
     
     Example
     cognito-cli signin

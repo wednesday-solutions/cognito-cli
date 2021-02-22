@@ -1,6 +1,6 @@
 {
   "name": "cognito-login-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A cli to interact with your cognito user pool, create accounts, force verify, login, verify phone number, verify email, etc.",
   "repository": {

@@ -42,7 +42,7 @@ const handleCli = cliArgs => {
     case 'forceVerify':
       forceVerify(strippedArgs);
       break;
-    case 'smsMFA':
+    case 'enableMFA':
       smsMFA(strippedArgs);
       break;
     case 'createConfig':

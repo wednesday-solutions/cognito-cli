@@ -1,5 +1,16 @@
 # Cognito Cli
 
+## Installation
+
+Install using yarn
+
+```
+yarn global add cognito-cli
+```
+
+Install using npm
+
+npm install -g cognito-cli
 ## Documentation
 
 ### Help

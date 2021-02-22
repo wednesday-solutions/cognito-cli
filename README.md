@@ -1,4 +1,5 @@
 # Cognito Cli
+A cli to interact with your cognito user pool, create accounts, force verify, login, verify phone number, verify email, etc.
 
 ## Installation
 

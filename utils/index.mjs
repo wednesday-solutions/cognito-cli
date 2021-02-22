@@ -219,8 +219,6 @@ export function forceVerify(args) {
       Username: config.email,
       UserPoolId: config.userPoolId,
       UserAttributes: [
-        { Name: 'given_name', Value: config.givenName },
-        { Name: 'family_name', Value: config.lastName },
         { Name: 'email_verified', Value: config.emailVerified.toString() },
         {
           Name: 'phone_number_verified',

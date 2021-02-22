@@ -30,13 +30,7 @@ cognito-cli --help
     cognito-cli getConfig
 
 
-> For one off changes you can pass config args to any command. 
-
-> Example
-
-> ```
-> cognito-cli signin --email=mac@wednesday.is --userPoolId=123
-> ```
+> For one off changes you can pass config args to any command. For example: cognito-cli signin --email=mac@wednesday.is --userPoolId=123
 
 
 #### signin

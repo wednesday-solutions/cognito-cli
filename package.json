@@ -1,11 +1,11 @@
 {
-  "name": "cognito-login-cli",
+  "name": "aws-cognito-cli",
   "version": "1.0.0",
   "type": "module",
   "description": "A cli to interact with your cognito user pool, create accounts, force verify, login, verify phone number, verify email, etc.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wednesday-solutions/cognito-login-cli.git"
+    "url": "git://github.com/wednesday-solutions/cognito-cli.git"
   },
   "engines": {
     "npm": ">=5",

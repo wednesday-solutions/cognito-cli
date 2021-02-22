@@ -5,12 +5,14 @@
 Install using yarn
 
 ```
-yarn global add cognito-cli
+yarn global add aws-cognito-cli
 ```
 
 Install using npm
 
-npm install -g cognito-cli
+```
+npm install -g aws-cognito-cli
+```
 ## Documentation
 
 ### Help

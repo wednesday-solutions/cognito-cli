@@ -29,6 +29,16 @@ cognito-cli --help
     Example
     cognito-cli getConfig
 
+
+> For one off changes you can pass config args to any command. 
+
+> Example
+
+> ```
+> cognito-cli signin --email=mac@wednesday.is --userPoolId=123
+> ```
+
+
 #### signin
 
     Use the config to get to sign in and get tokens
@@ -67,14 +77,6 @@ cognito-cli --help
     
     Example
     cognito-cli forceVerify
-    
-    
-#### updateAttributes
-
-    Update the congito attributes. 
-    
-    Example
-    cognito-cli updateAttributes
 
 #### enableMFA
 
@@ -82,10 +84,3 @@ cognito-cli --help
     
     Example
     cognito-cli enableMFA
-
-
-For one off changes you can pass config args to any command. 
-
-Example
-
-cognito-cli signin --email=mac@wednesday.is --userPoolId=123

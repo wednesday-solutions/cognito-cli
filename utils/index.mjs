@@ -6,7 +6,7 @@ import AWS from 'aws-sdk';
 import AmplifySDK from 'aws-amplify';
 import nodeFetch from 'node-fetch';
 import { fileURLToPath } from 'url';
-import _ from 'lodash'
+import _ from 'lodash';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 global.fetch = nodeFetch.default;
@@ -45,8 +45,8 @@ const handleOnGetConfig = (callback, printConfig, data) => {
     callback(config);
   }
 
-  if (typeof config === "string") {
-    return JSON.parse(config)
+  if (typeof config === 'string') {
+    return JSON.parse(config);
   }
 };
 
@@ -72,15 +72,15 @@ export function createConfig(args, dontWrite) {
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     const [k, value] = arg.toString().split('=');
-    const key = k.replace("--", "");
-    if (!k.includes('--') || !config.hasOwnProperty("region")) {
+    const key = k.replace('--', '');
+    if (!k.includes('--') || !config.hasOwnProperty('region')) {
       return shell.echo(`Invalid arg ${key}`);
     }
     newConfig[key] = value;
   }
   config = { ...config, ...newConfig };
   if (!dontWrite) {
-    fs.writeFileSync(configPath, JSON.stringify(config))
+    fs.writeFileSync(configPath, JSON.stringify(config));
   }
 }
 
@@ -213,10 +213,6 @@ export function smsMFA(args) {
     });
 }
 
-export function updateAttributes(args) {
-
-}
-
 export function forceVerify(args) {
   cognito
     .adminUpdateUserAttributes({
@@ -225,10 +221,10 @@ export function forceVerify(args) {
       UserAttributes: [
         { Name: 'given_name', Value: config.givenName },
         { Name: 'family_name', Value: config.lastName },
-        { Name: 'email_verified', Value: (config.emailVerified).toString() },
+        { Name: 'email_verified', Value: config.emailVerified.toString() },
         {
           Name: 'phone_number_verified',
-          Value: (config.phoneVerified).toString(),
+          Value: config.phoneVerified.toString(),
         },
         { Name: 'email', Value: config.email },
         { Name: 'phone_number', Value: config.phoneNumber },

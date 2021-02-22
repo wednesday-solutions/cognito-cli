@@ -24,9 +24,8 @@ if (!commandLineArgs[0]) {
   getConfig(() => handleCli(commandLineArgs));
 }
 const handleCli = cliArgs => {
-
   const strippedArgs = _.drop(cliArgs);
-  createConfig(strippedArgs, true)
+  createConfig(strippedArgs, true);
   switch (cliArgs[0]) {
     case 'signin':
       signIn(strippedArgs);
@@ -45,15 +44,12 @@ const handleCli = cliArgs => {
       break;
     case 'smsMFA':
       smsMFA(strippedArgs);
+      break;
     case 'createConfig':
       createConfig(strippedArgs);
       break;
     case 'getConfig':
       getConfig(null, true);
-      break;
-
-    case 'updateAttributes':
-      updateAttributes(null, true);
       break;
     default:
       shell.exec(`echo Sorry ${commandLineArgs[0]} is not a valid command`);

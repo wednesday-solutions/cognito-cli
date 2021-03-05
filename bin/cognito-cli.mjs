@@ -55,8 +55,7 @@ const handleCli = cliArgs => {
       shell.echo(
       `
         createConfig
-        Create the config that will be used to perform various cognito functions
-        \n\n
+        Create the config that will be used to perform various cognito functions\n\n
         getConfig
         Get the current configuration that will be used to perform various cognito functions\n\n
         signin
@@ -69,8 +68,8 @@ const handleCli = cliArgs => {
         Verify the phone in the config. \n\n
         forceVerify
         Force verify email, phone number attributes in cognito \n\n
-        enableMFA\n\n
-        Enable MFA for the user. `
+        enableMFA
+        Enable MFA for the user.`
     );
     default:
       shell.exec(`echo Sorry ${commandLineArgs[0]} is not a valid command`);

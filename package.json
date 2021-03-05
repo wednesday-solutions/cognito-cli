@@ -1,6 +1,6 @@
 {
   "name": "aws-cognito-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "A cli to interact with your cognito user pool, create accounts, force verify, login, verify phone number, verify email, etc.",
   "repository": {

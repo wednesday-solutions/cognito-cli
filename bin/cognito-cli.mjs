@@ -51,6 +51,27 @@ const handleCli = cliArgs => {
     case 'getConfig':
       getConfig(null, true);
       break;
+    case '--help':
+      shell.echo(
+      `
+        createConfig
+        Create the config that will be used to perform various cognito functions
+        \n\n
+        getConfig
+        Get the current configuration that will be used to perform various cognito functions\n\n
+        signin
+        Use the current config to sign in and get tokens\n\n
+        signup
+        Use the current config to create a new user\n\n
+        verifyEmail
+        Verify the email in the config.\n\n
+        verifyPhone
+        Verify the phone in the config. \n\n
+        forceVerify
+        Force verify email, phone number attributes in cognito \n\n
+        enableMFA\n\n
+        Enable MFA for the user. `
+    );
     default:
       shell.exec(`echo Sorry ${commandLineArgs[0]} is not a valid command`);
       break;

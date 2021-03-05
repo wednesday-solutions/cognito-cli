@@ -69,7 +69,7 @@
   },
   "@babel/cli": "7.4.3",
   "bin": {
-    "cognito-cli": "bin/cognito-cli.mjs"
+    "cognito-cli": "--no-warnings bin/cognito-cli.mjs"
   },
   "devDependencies": {
     "eslint": "^7.20.0",

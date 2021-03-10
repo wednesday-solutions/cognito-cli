@@ -125,7 +125,7 @@ export function signIn(args) {
     .then(user => {
       user.getSession((error, data) => {
         if (!error) {
-          console.log(JSON.parse(JSON.stringify(data)));
+          console.log(JSON.stringify(data, null, 2));
         } else {
           console.log(error);
         }
